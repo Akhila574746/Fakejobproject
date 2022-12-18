@@ -1,5 +1,5 @@
 import streamlit as st
-pip install joblib
+pip install joblib --user
 import joblib
 
 model_nb = joblib.load('Fake_job_postings')
