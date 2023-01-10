@@ -6,7 +6,7 @@ model_nb = joblib.load('Fake_job_postings')
 vect = joblib.load('vect.pkl')
 
 def main():
-  st.title('Fraudulente Job Detection') #creates a title in web app
+  st.title('Fraudulent Job Detection') #creates a title in web app
   ip = st.text_input('Enter Job Description:') #creates a text box in web app
   if st.button('Predict'):
     data=[ip]
