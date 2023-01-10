@@ -13,7 +13,7 @@ def main():
     cv=vect.transform(data).toarray()
     prediction=model_nb.predict(cv)
     result=prediction[0]
-    if result==1:
+    if result==0:
       st.error("Fraudulant Job")
     else:
       st.success("Real Job")
